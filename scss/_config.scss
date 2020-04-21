@@ -4,7 +4,7 @@ $show-home-image:true;
 $home-image: url(../img/showcase.jpg);
 $background-opacity: 0.9;
 @mixin ease-out {
-    transition: all 0.5 ease-out;
+    transition: all 4 ease-out;
 }
 @mixin background {
     @if $show-home-image{
