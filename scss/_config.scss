@@ -28,3 +28,36 @@ $background-opacity: 0.9;
        
     }
 }
+@function set-text-color($color){
+    @if(lightness($color) > 40){
+        @return #000;
+    }
+    @else{
+        @return white;
+    }
+}
+//media queries
+@mixin mediasm{
+    @media screen and (max-width: 500px){
+        @content;
+    }
+} 
+    
+@mixin mediamd{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+} 
+    
+@mixin medialg{
+    @media screen and (min-width: 769px) and (max-width: 1170px){
+        @content;
+    }
+} 
+    
+@mixin mediaxl{
+    @media screen and (min-width: 1171px){
+        @content;
+    }
+} 
+    
